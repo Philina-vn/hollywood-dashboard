@@ -1,0 +1,31 @@
+.wrap {
+  width: 1365px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar {
+  width: 6%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FC755A), to(#FD5272));
+  background-image: linear-gradient(#FC755A, #FD5272);
+  background: url(../img/nav/w.jpeg);
+}
+
+.content {
+  width: 94%;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FC755A), to(#FD5272));
+  background-image: linear-gradient(#FC755A, #FD5272);
+}
+/*# sourceMappingURL=main.css.map */
