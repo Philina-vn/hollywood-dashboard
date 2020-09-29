@@ -2,13 +2,13 @@
     width: 1365px;
     height: 100vh;
     display: flex;
+    margin: 0 auto;
 }
 
 .bar {
-    width: 6%;
-    background-image: linear-gradient(#FC755A, #FD5272);
-    background: url(../img/nav/w.jpeg);
-
+    width: 70px;
+    background: linear-gradient(to bottom, #FC755A, #FD5272);
+    @include 
 }
 
 .content {
