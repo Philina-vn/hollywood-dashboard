@@ -1,13 +1,57 @@
 nav {
+    justify-content: center;
+    align-items: center;
     display: flex;
-    background-image: linear-gradient(#FC755A, #FD5272);
+    flex-direction: column;
+    
 }
 
 .site-logo {
-    background: url(../../source/img/nav/w.jpeg) no-repeat;
-    width: primary-text;
+    background: url(../../source/img/nav/w.png) no-repeat;
+    width: 70px;
+    height: 70px;
+
 }
 
 .icons--home {
-    background: url();
+    background: url(../../source/img/nav/home.png) no-repeat center;
+    width: 70px;
+    height: 70px;
+    @include primary-text
+}
+
+.icons--statistics {
+    background: url(../../source/img/nav/statistics.png) no-repeat center;
+    @include primary-text;
+    width: 70px;
+    height: 70px;
+}
+
+.icons--users {
+    @include primary-text;
+    background: url(../../source/img/nav/user.png) no-repeat center;
+    width: 70px;
+    height: 70px;
+}
+
+.icons--settings {
+    @include primary-text;
+    background: url(../../source/img/nav/settings.png) no-repeat center;
+    width: 70px;
+    height: 70px;
+}
+
+.icons--quires{
+    @include primary-text;
+    background: url(../../source/img/nav/quires.png) no-repeat center;
+    width: 70px;
+    height: 70px;
+}
+
+.icons--power{
+    @include primary-text;
+    background: url(../../source/img/nav/power.png) no-repeat center;
+    width: 70px;
+    height: 70px;
+    margin-top: 300px;
 }
