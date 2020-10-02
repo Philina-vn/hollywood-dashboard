@@ -4,6 +4,17 @@
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
-    position: relative;
-    top: 50px;
+}
+
+@mixin bold-header {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #777777;
+}
+
+@mixin light-style {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    color: #BFBFBF;
 }

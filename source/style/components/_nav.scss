@@ -10,18 +10,24 @@ nav {
     background: url(../../source/img/nav/w.png) no-repeat;
     width: 70px;
     height: 70px;
-
+    position: relative;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 .icons--home {
-    background: url(../../source/img/nav/home.png) no-repeat center;
+    background: url(../../source/img/nav/home.png) no-repeat top;
     width: 70px;
     height: 70px;
     @include primary-text
 }
 
 .icons--statistics {
-    background: url(../../source/img/nav/statistics.png) no-repeat center;
+    background: url(../../source/img/nav/statistics.png) no-repeat top;
     @include primary-text;
     width: 70px;
     height: 70px;
@@ -29,29 +35,30 @@ nav {
 
 .icons--users {
     @include primary-text;
-    background: url(../../source/img/nav/user.png) no-repeat center;
+    background: url(../../source/img/nav/user.png) no-repeat top;
     width: 70px;
     height: 70px;
 }
 
 .icons--settings {
     @include primary-text;
-    background: url(../../source/img/nav/settings.png) no-repeat center;
+    background: url(../../source/img/nav/settings.png) no-repeat top;
     width: 70px;
     height: 70px;
 }
 
 .icons--quires{
     @include primary-text;
-    background: url(../../source/img/nav/quires.png) no-repeat center;
+    background: url(../../source/img/nav/quires.png) no-repeat top;
     width: 70px;
     height: 70px;
 }
 
 .icons--power{
     @include primary-text;
-    background: url(../../source/img/nav/power.png) no-repeat center;
+    background: url(../../source/img/nav/power.png) no-repeat top;
     width: 70px;
     height: 70px;
     margin-top: 300px;
 }
+
