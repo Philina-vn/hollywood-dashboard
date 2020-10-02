@@ -1,64 +1,58 @@
-nav {
+.nav {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+    height: 100%;
+
+    &__icon {
+        @include primary-text;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 15px;
+        width: 70px;
+        height: 70px;
+        background: no-repeat center 15px;
+
+        &:hover {
+            background-color: green;
+        }
+
+        &_logo {
+            background: url(../../source/img/nav/w.png) no-repeat;
+            margin-bottom: 15px;
+        }
+
+        &_home {
+            background-image: url(../../source/img/nav/home.png);
+        }
+        
+        &_statistics {
+            background-image: url(../../source/img/nav/statistics.png);
+        }
+        
+        &_users {
+            background-image: url(../../source/img/nav/user.png);
+        }
+        
+        &_settings {
+            background-image: url(../../source/img/nav/settings.png);
+        }
+        
+        &_quires{
+            background-image: url(../../source/img/nav/quires.png);
+        }
+        
+        &_power{
+            background-image: url(../../source/img/nav/power.png);
+            background-position: center;
+            margin-top: auto;
+        }
+    }
 }
 
-.site-logo {
-    background: url(../../source/img/nav/w.png) no-repeat;
-    width: 70px;
-    height: 70px;
-    position: relative;
-}
 
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-.icons--home {
-    background: url(../../source/img/nav/home.png) no-repeat top;
-    width: 70px;
-    height: 70px;
-    @include primary-text
-}
 
-.icons--statistics {
-    background: url(../../source/img/nav/statistics.png) no-repeat top;
-    @include primary-text;
-    width: 70px;
-    height: 70px;
-}
 
-.icons--users {
-    @include primary-text;
-    background: url(../../source/img/nav/user.png) no-repeat top;
-    width: 70px;
-    height: 70px;
-}
-
-.icons--settings {
-    @include primary-text;
-    background: url(../../source/img/nav/settings.png) no-repeat top;
-    width: 70px;
-    height: 70px;
-}
-
-.icons--quires{
-    @include primary-text;
-    background: url(../../source/img/nav/quires.png) no-repeat top;
-    width: 70px;
-    height: 70px;
-}
-
-.icons--power{
-    @include primary-text;
-    background: url(../../source/img/nav/power.png) no-repeat top;
-    width: 70px;
-    height: 70px;
-    margin-top: 300px;
-}
 

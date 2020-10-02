@@ -10,15 +10,14 @@
 <body>
     <div class="wrap">
        <div class="bar">
-           <nav>
-                <a href="#" class="site-logo"></a> 
-                <a href="#" class="icons icons--home">Home</a>
-                <a href="#" class="icons icons--statistics">Statistics</a>
-                <a href="#" class="icons icons--users">Users</a>
-                <a href="#" class="icons icons--settings">Settings</a>
-                <a href="#" class="icons icons--quires">Quires</a>
-               
-               <a href="#" class="icons icons--power"></a>
+           <nav class="nav">
+                <a href="#" class="nav__icon nav__icon_logo"></a> 
+                <a href="#" class="nav__icon nav__icon_home">Home</a>
+                <a href="#" class="nav__icon nav__icon_statistics">Statistics</a>
+                <a href="#" class="nav__icon nav__icon_users">Users</a>
+                <a href="#" class="nav__icon nav__icon_settings">Settings</a>
+                <a href="#" class="nav__icon nav__icon_quires">Quires</a>
+                <a href="#" class="nav__icon nav__icon_power"></a>
            </nav>
        </div>
        <div class="content">
@@ -35,13 +34,74 @@
                    </div>
                    <div class="user-account">
                        <img src="./source/img/header/kendall.png" alt="kendall-jenner">
-                       <div class="header-nav__user">
-                           <p class="user-name">Kendall Jenner</p>
-                           <p class="user-comment" >Cheif Authority</p>
+                       <div class="user-account__main">
+                           <p class="user-account user-account__user-name">Kendall Jenner</p>
+                           <p class="user-account user-account__user-comment" >Cheif Authority</p>
                        </div>
                    </div>
                </div>
-               <div class="header-progress"></div>
+               <div class="header-progress">
+                   <ul class="header-progress__list">
+                       <li class="header-progress__item"> 
+                           <p class="header-progress__item-daily"> Daily Visitors</p>
+                           <p class="header-progress__item-daily-number">150,0000</p>
+                           <div class="header-progress__triangles"> 
+                               <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                               <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                        </div>
+                       </li>
+                       <li class="header-progress__item">
+                            <p class="header-progress__item-daily"> Daily Customers</p>
+                            <p class="header-progress__item-daily-number">120,0000</p>
+                            <div class="header-progress__triangles"> 
+                                <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                                <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                            </div>
+                       </li>
+                       <li class="header-progress__item">
+                            <p class="header-progress__item-daily"> Daily Orders</p>
+                            <p class="header-progress__item-daily-number">90,000</p>
+                            <div class="header-progress__triangles"> 
+                                <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                                <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                            </div>
+                       </li>
+                       <li class="header-progress__item">
+                            <p class="header-progress__item-daily"> Daily Sales</p>
+                            <p class="header-progress__item-daily-number">850,000</p>
+                            <div class="header-progress__triangles"> 
+                                <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                                <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                            </div>
+                       </li>
+                       <li class="header-progress__item">
+                            <p class="header-progress__item-daily"> Daily Shipments</p>
+                            <p class="header-progress__item-daily-number">750,000</p>
+                            <div class="header-progress__triangles"> 
+                                <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                                <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                            </div>
+                       </li>
+                       <li class="header-progress__item">
+                            <p class="header-progress__item-daily"> Daily Revenue</p>
+                            <p class="header-progress__item-daily-number">$985,0000</p>
+                            <div class="header-progress__triangles"> 
+                                <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                                <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                            </div>
+                       </li>
+                       <li class="header-progress__item">
+                            <p class="header-progress__item-daily"> Daily Reviewers</p>
+                            <p class="header-progress__item-daily-number">600,000</p>
+                            <div class="header-progress__triangles"> 
+                                <div class="header-progress__triangles-purple"> <span class="header-progress__digit-purple">1020</span> </div>
+                                <div class="header-progress__triangles-red"><span class="header-progress__digit-red">1020</span> </div>
+                            </div>
+                       </li>
+                       <li class="header-progress__item"> 
+                           <p class="header-progress__item-add">+ Add Statistics</p></li>
+                   </ul>
+               </div>
            </div>
            <div class="section">
                <main>

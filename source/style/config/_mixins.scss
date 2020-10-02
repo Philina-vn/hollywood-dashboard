@@ -18,3 +18,9 @@
     font-size: 10px;
     color: #BFBFBF;
 }
+
+@mixin number {
+    font-size: 20px;
+    color: #FC705E;
+    font-weight: bold;
+}
