@@ -1,6 +1,6 @@
 # Hollywood dashboard
 
-[links]()
+https://philina-vn.github.io/hollywood-dashboard/
 
 ### description
 
