@@ -1,5 +1,7 @@
 .aside{
     display: flex;
+    flex-direction: column;
+    flex: auto;
     width: 270px;
     height: 612px;
     
@@ -7,6 +9,7 @@
 
 .communication{
     display: flex;
+    flex-direction: row;
     justify-content: start;
     width: 270px;
     height: 47px;
@@ -33,5 +36,50 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.others{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &__users{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        height: 86px;
+    }
+
+    &__users-avatar{
+        width: 42px;
+        height: 42px;
+        margin: 20px 18px;
+    }
+
+   
+
+    &__users-data-name{
+        @include bold-header;
+        margin-top: 25px ;
+    }
+
+    &__users-data-status{
+        @include light-style;
+    }
+
+    &__users-message{
+        width: 20px;
+        height: 16px;
+        margin-top: 30px;
+        margin-left: 47px;
+    }
+
+    &__users-line{
+        width: 233px;
+        height: 2px;
+        background-color: #F1F1F1;
+        border: none;
     }
 }
