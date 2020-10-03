@@ -117,8 +117,6 @@ img {
 
 .bar {
   width: 70px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FC755A), to(#FD5272));
-  background: linear-gradient(to bottom, #FC755A, #FD5272);
   font-family: 'Lato', sans-serif;
   font-size: 10px;
   color: #FFFFFF;
@@ -146,6 +144,7 @@ img {
 
 .wrapper {
   width: 270px;
+  height: 100%;
 }
 
 .aside {
@@ -160,7 +159,6 @@ img {
       -ms-flex: auto;
           flex: auto;
   width: 270px;
-  height: 612px;
 }
 
 .communication {
@@ -235,9 +233,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .others__users {
@@ -249,7 +244,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 86px;
+  height: 82px;
 }
 
 .others__users-avatar {
@@ -258,12 +253,16 @@ img {
   margin: 20px 18px;
 }
 
+.others__users-data {
+  margin-top: 25px;
+  width: 110px;
+}
+
 .others__users-data-name {
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   font-weight: bold;
   color: #777777;
-  margin-top: 25px;
 }
 
 .others__users-data-status {
@@ -284,12 +283,82 @@ img {
   height: 2px;
   background-color: #F1F1F1;
   border: none;
+  margin: 0 auto;
 }
 
-footer {
-  width: 270px;
-  height: 224px;
-  background-color: lightpink;
+.search-others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 47px;
+  background-color: #FCFCFC;
+  border: 1px solid #F1F1F1;
+}
+
+.search-others__input {
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  color: #BFBFBF;
+  opacity: 0.5;
+  min-width: 164px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.search-others__search {
+  opacity: 0.5;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 27px 28px;
+}
+
+.footer__title {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #777777;
+  margin-bottom: 30px;
+}
+
+.footer__companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__company {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  margin: 8px;
+  background: red;
 }
 
 .header--nav {
@@ -537,13 +606,64 @@ footer {
   min-width: 320px;
   height: 832px;
   background-color: #EBEBEB;
-  padding: 20px;
+  padding: 10px;
 }
 
-.graphs__graphic {
-  width: 704px;
+.graphs__item {
+  margin: 10px;
+}
+
+.graphs__item_graphic {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   height: 265px;
   background-color: #FFFFFF;
+}
+
+.graphs__item_hour {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 265px;
+  background-color: #FFFFFF;
+}
+
+.graphs__item_customers {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  min-width: 300px;
+  height: 507px;
+  background-color: #FFFFFF;
+}
+
+.graphs__item_daily-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  min-width: 300px;
+  height: 507px;
+}
+
+.graphs__item-inner {
+  width: calc(50% - 10px);
+  background-color: #FFFFFF;
+}
+
+.graphs__item-inner_big {
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.graphs__item-inner:last-child {
+  margin-left: 20px;
 }
 
 .graphs__graphic-revenue {
@@ -558,12 +678,6 @@ footer {
   margin: 10px;
 }
 
-.graphs__hour {
-  width: 263px;
-  height: 265px;
-  background-color: #FFFFFF;
-}
-
 .graphs__hour-revenue {
   font-family: 'Lato', sans-serif;
   font-size: 13px;
@@ -575,19 +689,6 @@ footer {
 
 .graphs__hour-revenue-circle {
   margin: 5px 20px 20px 33px;
-}
-
-.graphs__customers {
-  width: 466px;
-  height: 507px;
-  background-color: bisque;
-}
-
-.graphs__daily {
-  width: 500px;
-  height: 244px;
-  background-color: bisque;
-  margin: 0 auto;
 }
 
 .nav {
@@ -605,6 +706,11 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  -webkit-box-shadow: 10px 4px 12px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 4px 12px -6px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FC755A), to(#FD5272));
+  background: linear-gradient(to bottom, #FC755A, #FD5272);
 }
 
 .nav__icon {

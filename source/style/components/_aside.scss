@@ -3,8 +3,6 @@
     flex-direction: column;
     flex: auto;
     width: 270px;
-    height: 612px;
-    
 }
 
 .communication{
@@ -43,13 +41,12 @@
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 
     &__users{
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
-        height: 86px;
+        height: 82px;
     }
 
     &__users-avatar{
@@ -58,11 +55,13 @@
         margin: 20px 18px;
     }
 
-   
+   &__users-data{
+        margin-top: 25px ;
+        width: 110px;
+   }
 
     &__users-data-name{
         @include bold-header;
-        margin-top: 25px ;
     }
 
     &__users-data-status{
@@ -81,5 +80,31 @@
         height: 2px;
         background-color: #F1F1F1;
         border: none;
+        margin: 0 auto;
+    }
+}
+
+.search-others{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 47px;
+    background-color: #FCFCFC;
+    border: 1px solid #F1F1F1;
+
+    &__input{
+        @include light-style;
+        opacity: 0.5;
+        min-width: 164px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #F1F1F1;
+    }
+
+    &__search{
+        opacity: 0.5;
     }
 }

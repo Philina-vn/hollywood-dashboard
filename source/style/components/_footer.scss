@@ -1,5 +1,24 @@
-footer {
-    width: 270px;
-    height: 224px;
-    background-color: lightpink;
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 27px 28px;
+
+    &__title{
+        @include bold-header;
+        margin-bottom: 30px;
+    }
+
+    &__companies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__company {
+        width: 55px;
+        height: 55px;
+        border-radius: 15px;
+        margin: 8px;
+        background: red;
+    }
 }
