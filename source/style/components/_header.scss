@@ -113,18 +113,10 @@
         list-style: none;
     }
         
-    }
 
     &__item-daily{
         @include bold-header;
         margin: 5px;
-    }
-
-    &__item-add{
-        font-family: 'Lato', sans-serif;
-        font-size: 13px;
-        font-weight: bold;
-        color: #FC715D;
     }
 
     &__item-daily-number{
@@ -172,5 +164,4 @@
         @include light-style;
         margin-left: 5px;
     }
-    
-   
+}

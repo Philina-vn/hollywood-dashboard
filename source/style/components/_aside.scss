@@ -1,5 +1,37 @@
-aside{
+.aside{
+    display: flex;
     width: 270px;
     height: 612px;
-    background-color: crimson;
+    
+}
+
+.communication{
+    display: flex;
+    justify-content: start;
+    width: 270px;
+    height: 47px;
+
+    &__friends{
+        background-color: #C34356;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__chat{
+        background-color: #FB6664;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__like{
+        background-color: #FC7858;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

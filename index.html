@@ -99,21 +99,35 @@
                             </div>
                        </li>
                        <li class="header-progress__item"> 
-                           <p class="header-progress__item-add">+ Add Statistics</p></li>
+                           <p class="header-progress__item-daily"> + Add Statistics</p>
+                        </li>
                    </ul>
                </div>
            </div>
            <div class="section">
-               <main>
-                   <div class="graphic"></div>
-                   <div class="hour"></div>
-                   <div class="customers"></div>
-                   <div class="daily"></div>
-                   <div class="progress"></div>
-                   <div class="shipments"></div>
+               <main class="graphs">
+                   <div class="graphs__graphic">
+                       <p class="graphs__graphic-revenue">Monthly Revenue Progress</p>
+                       <img class="graphs__graphic-revenue-stat" src="./source/img/main/revenue.png" alt="revenue-graphic">
+                   </div>
+                   <div class="graphs__hour">
+                       <p class="graphs__hour-revenue">Revenue Per Hour</p>
+                       <img class="graphs__hour-revenue-circle" src="./source/img/main/hour.png" alt="hour-amount">
+                   </div>
+                   <div class="graphs__customers"></div>
+                   <div class="graphs__daily"></div>
+                   <div class="graphs__progress"></div>
+                   <div class="graphs__shipments"></div>
                </main>
                <div class="wrapper">
-                   <aside></aside>
+                   <aside class="aside">
+                       <div class="communication">
+                           <div class="communication__friends"> <img  src="./source/img/aside/users.png" alt="friends"></div>
+                           <div class="communication__chat"> <img  src="./source/img/aside/chat.png" alt="chat"></div>
+                           <div class="communication__like"> <img  src="./source/img/aside/like.png" alt="like"></div>
+                       </div>
+
+                   </aside>
                    <footer></footer>
                </div>
            </div>
