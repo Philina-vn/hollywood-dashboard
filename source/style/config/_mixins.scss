@@ -24,3 +24,12 @@
     color: #FC705E;
     font-weight: bold;
 }
+
+@mixin avatar {
+    width: 42px;
+    height: 42px;
+}
+
+@mixin borders {
+    border: 1px solid #F1F1F1;
+}
