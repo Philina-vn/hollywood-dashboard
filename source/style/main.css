@@ -695,6 +695,7 @@ img {
   height: 82px;
   margin: 40px 0 30px 0;
   padding: 20px;
+  background-color: #FCFCFC;
 }
 
 .graphs__item_customers_comment-main-first::before {
@@ -719,6 +720,7 @@ img {
   height: 80px;
   padding: 20px;
   margin-bottom: 20px;
+  background-color: #FCFCFC;
 }
 
 .graphs__item_customers_subcomments_first::before {
@@ -739,6 +741,7 @@ img {
   height: 80px;
   margin-top: 10px;
   padding: 20px;
+  background-color: #FCFCFC;
 }
 
 .graphs__item_customers_comment-main-last::before {
